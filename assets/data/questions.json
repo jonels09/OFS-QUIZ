@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "text": {
+        "fr": "Quelle est l'année de naissance de Saint François d'Assise ?",
+        "mg": "Oviana no teraka i Masindahy François d'Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "1181",
+            "mg": "1181"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "1182",
+            "mg": "1182"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "1183",
+            "mg": "1183"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "2",
+      "text": {
+        "fr": "Quel est le nom de la ville natale de Saint François d'Assise ?",
+        "mg": "Inona no anaran'ny tanàna nahaterahan'i Masindahy François d'Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Florence",
+            "mg": "Florence"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Assise",
+            "mg": "Assise"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Rome",
+            "mg": "Roma"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "3",
+      "text": {
+        "fr": "Quel ordre religieux a été fondé par Saint François d'Assise ?",
+        "mg": "Inona ny fikambanana ara-pivavahana natsangan’i Masindahy François d’Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Les Bénédictins",
+            "mg": "Ny Bénédictins"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Les Franciscains",
+            "mg": "Ny Franciscains"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Les Dominicains",
+            "mg": "Ny Dominicains"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "4",
+      "text": {
+        "fr": "Quel est le symbole associé à Saint François d'Assise ?",
+        "mg": "Inona no mariky ny Masindahy François d'Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La croix",
+            "mg": "Ny hazo fijaliana"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Le loup",
+            "mg": "Ny amboadia"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "La colombe",
+            "mg": "Ny voromailala"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "5",
+      "text": {
+        "fr": "Quel événement a marqué le début de la conversion de Saint François d'Assise ?",
+        "mg": "Inona no zava-nitranga nanomboka ny fiovam-pinoana nataon’i Masindahy François d’Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La guerre",
+            "mg": "Ny Ady"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "La vision divine",
+            "mg": "Fahitana masina"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Le mariage",
+            "mg": "Mariazy"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "6",
+      "text": {
+        "fr": "Quel est le titre du cantique célèbre attribué à Saint François d’Assise ?",
+        "mg": "Inona no lohatenin’ny tononkira malaza natokana ho an’i Masindahy François d’Assise ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Cantique des cantiques",
+            "mg": "Tononkira ny tononkira"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Cantique des créatures",
+            "mg": "Tononkira ny zava-boahary"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Cantique de la paix",
+            "mg": "Tononkira ny fandriampahalemana"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "7",
+      "text": {
+        "fr": "À quel âge Saint François d’Assise a-t-il décidé de mener une vie d’ermite ?",
+        "mg": "Amin’ny taonany firy no nanapa-kevitra i Masindahy François d’Assise hanana fiainana eremita ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "20 ans",
+            "mg": "20 taona"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "30 ans",
+            "mg": "30 taona"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "25 ans",
+            "mg": "25 taona"
+          },
+          "isCorrect": true
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "8",
+      "text": {
+        "fr": "Où Saint François d’Assise a-t-il reçu les stigmates ?",
+        "mg": "Aiza no nahazoan’i Masindahy François d’Assise ny stigmas ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "À Assise",
+            "mg": "Ao Asizy"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Au mont Alverne",
+            "mg": "Ao amin’ny tendrombohitra Alverne"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "À Rome",
+            "mg": "Ao Roma"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "9",
+      "text": {
+        "fr": "Quel animal est souvent représenté avec Saint François d’Assise dans l’art ?",
+        "mg": "Inona ny biby matetika aseho miaraka amin’i Masindahy François d’Assise amin’ny zavakanto?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Le cheval",
+            "mg": "Ny soavaly"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "L'oiseau",
+            "mg": "Ny vorona"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Le serpent",
+            "mg": "Ny bibilava"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    },
+    {
+      "id": "10",
+      "text": {
+        "fr": "Quelle fête célèbre la mémoire de Saint François d’Assise ?",
+        "mg": "Inona ny fety mankalaza ny fahatsiarovana an’i Md François avy any Asizy?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La Toussaint",
+            "mg": "Ny Fetin’ny Olomasina"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "La fête de Saint François",
+            "mg": "Ny Fetin’i Masindahy François"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Noël",
+            "mg": "Noely"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1,
+      "imageUrl": "assets/images/saint_francis_birth.jpg"
+    }
+  ]
+}
