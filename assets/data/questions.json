@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "id": "1",
+      "id": "f1",
       "text": {
         "fr": "Quelle est l'année de naissance de Saint François d'Assise ?",
         "mg": "Oviana no teraka i Masindahy François d'Assise ?"
@@ -30,29 +30,156 @@
         }
       ],
       "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
+      "difficulty": 1
     },
     {
-      "id": "2",
+      "id": "f2",
       "text": {
-        "fr": "Quel est le nom de la ville natale de Saint François d'Assise ?",
-        "mg": "Inona no anaran'ny tanàna nahaterahan'i Masindahy François d'Assise ?"
+        "fr": "Quel était le nom de baptême de Saint François ?",
+        "mg": "Inona no anaran'i Masindahy François tamin'ny batemy ?"
       },
       "answers": [
         {
           "text": {
-            "fr": "Florence",
-            "mg": "Florence"
+            "fr": "Giovanni",
+            "mg": "Giovanni"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Francesco",
+            "mg": "Francesco"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Pietro",
+            "mg": "Pietro"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f3",
+      "text": {
+        "fr": "Dans quelle ville est né Saint François ?",
+        "mg": "Tao amin'ny tanàna inona no nahaterahan'i Masindahy François ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Rome",
+            "mg": "Roma"
           },
           "isCorrect": false
         },
         {
           "text": {
             "fr": "Assise",
-            "mg": "Assise"
+            "mg": "Assize"
           },
           "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Florence",
+            "mg": "Firenze"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f4",
+      "text": {
+        "fr": "Quelle était la profession du père de Saint François ?",
+        "mg": "Inona no asan'ny rain'i Masindahy François ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Marchand de tissus",
+            "mg": "Mpivarotra lamba"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Boulanger",
+            "mg": "Mpanao mofo"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Forgeron",
+            "mg": "Mpanefy"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f5",
+      "text": {
+        "fr": "En quelle année Saint François a-t-il fondé l'Ordre des Frères Mineurs ?",
+        "mg": "Tamin'ny taona firy no nanorenany ny Fikambanana Frères Mineurs ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "1209",
+            "mg": "1209"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "1215",
+            "mg": "1215"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "1220",
+            "mg": "1220"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f6",
+      "text": {
+        "fr": "Où Saint François a-t-il reçu les stigmates ?",
+        "mg": "Taiza i Masindahy François no nahazo ny stigmates ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Mont Alverne",
+            "mg": "Tendrombohitra Alverne"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Assise",
+            "mg": "Assize"
+          },
+          "isCorrect": false
         },
         {
           "text": {
@@ -63,146 +190,845 @@
         }
       ],
       "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
+      "difficulty": 1
     },
     {
-      "id": "3",
+      "id": "f7",
       "text": {
-        "fr": "Quel ordre religieux a été fondé par Saint François d'Assise ?",
-        "mg": "Inona ny fikambanana ara-pivavahana natsangan’i Masindahy François d’Assise ?"
+        "fr": "Quelle sainte a fondé l'Ordre des Clarisses avec Saint François ?",
+        "mg": "Iza no masina nanorina ny Fikambanana Clarisses niaraka tamin'i Masindahy François ?"
       },
       "answers": [
         {
           "text": {
-            "fr": "Les Bénédictins",
-            "mg": "Ny Bénédictins"
-          },
-          "isCorrect": false
-        },
-        {
-          "text": {
-            "fr": "Les Franciscains",
-            "mg": "Ny Franciscains"
+            "fr": "Sainte Claire",
+            "mg": "Masindahy Claire"
           },
           "isCorrect": true
         },
         {
           "text": {
-            "fr": "Les Dominicains",
-            "mg": "Ny Dominicains"
-          },
-          "isCorrect": false
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "4",
-      "text": {
-        "fr": "Quel est le symbole associé à Saint François d'Assise ?",
-        "mg": "Inona no mariky ny Masindahy François d'Assise ?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "La croix",
-            "mg": "Ny hazo fijaliana"
+            "fr": "Sainte Agnès",
+            "mg": "Masindahy Agnes"
           },
           "isCorrect": false
         },
         {
           "text": {
-            "fr": "Le loup",
-            "mg": "Ny amboadia"
+            "fr": "Sainte Rose",
+            "mg": "Masindahy Rose"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f8",
+      "text": {
+        "fr": "En quelle année Saint François est-il mort ?",
+        "mg": "Tamin'ny taona firy no nodimandry i Masindahy François ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "1226",
+            "mg": "1226"
           },
           "isCorrect": true
         },
         {
           "text": {
-            "fr": "La colombe",
-            "mg": "Ny voromailala"
-          },
-          "isCorrect": false
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "5",
-      "text": {
-        "fr": "Quel événement a marqué le début de la conversion de Saint François d'Assise ?",
-        "mg": "Inona no zava-nitranga nanomboka ny fiovam-pinoana nataon’i Masindahy François d’Assise ?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "La guerre",
-            "mg": "Ny Ady"
+            "fr": "1228",
+            "mg": "1228"
           },
           "isCorrect": false
         },
         {
           "text": {
-            "fr": "La vision divine",
-            "mg": "Fahitana masina"
+            "fr": "1230",
+            "mg": "1230"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f9",
+      "text": {
+        "fr": "Quel pape a approuvé la première règle franciscaine ?",
+        "mg": "Iza no papa nanaiky ny fitsipika voalohany franciscaine ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Innocent III",
+            "mg": "Innocent III"
           },
           "isCorrect": true
         },
         {
           "text": {
-            "fr": "Le mariage",
-            "mg": "Mariazy"
-          },
-          "isCorrect": false
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "6",
-      "text": {
-        "fr": "Quel est le titre du cantique célèbre attribué à Saint François d’Assise ?",
-        "mg": "Inona no lohatenin’ny tononkira malaza natokana ho an’i Masindahy François d’Assise ?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "Cantique des cantiques",
-            "mg": "Tononkira ny tononkira"
+            "fr": "Honorius III",
+            "mg": "Honorius III"
           },
           "isCorrect": false
         },
         {
           "text": {
-            "fr": "Cantique des créatures",
-            "mg": "Tononkira ny zava-boahary"
+            "fr": "Grégoire IX",
+            "mg": "Grégoire IX"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 1
+    },
+    {
+      "id": "f10",
+      "text": {
+        "fr": "Quel est le surnom donné à Saint François ?",
+        "mg": "Inona no anarana fanampiny nomena an'i Masindahy François ?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Le Poverello",
+            "mg": "Ny Poverello"
           },
           "isCorrect": true
         },
         {
           "text": {
-            "fr": "Cantique de la paix",
-            "mg": "Tononkira ny fandriampahalemana"
+            "fr": "Le Saint",
+            "mg": "Ny Masina"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Le Sage",
+            "mg": "Ny Hendry"
           },
           "isCorrect": false
         }
       ],
       "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
+      "difficulty": 1
     },
     {
-      "id": "7",
+      "id": "f11",
       "text": {
-        "fr": "À quel âge Saint François d’Assise a-t-il décidé de mener une vie d’ermite ?",
-        "mg": "Amin’ny taonany firy no nanapa-kevitra i Masindahy François d’Assise hanana fiainana eremita ?"
+        "fr": "Quel était le rêve principal de Saint François avant sa conversion ?",
+        "mg": "Inona ny nofinofin'i Masindahy François talohan'ny niovany ho kristiana?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Devenir chevalier",
+            "mg": "Ho lasa mpitaingin-tsoavaly"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Devenir moine",
+            "mg": "Ho lasa moanina"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Voyager en Terre Sainte",
+            "mg": "Hivezivezy any Tany Masina"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 2
+    },
+    {
+      "id": "f12",
+      "text": {
+        "fr": "Dans quel lieu Saint François a-t-il entendu l'appel de Dieu pour reconstruire l'Église ?",
+        "mg": "Taiza i Masindahy François no naheno ny antson'Andriamanitra hanangana indray ny Fiangonana?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "San Damiano",
+            "mg": "San Damiano"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Mont Alverne",
+            "mg": "Tendrombohitra Alverne"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Basilique d'Assise",
+            "mg": "Basilika Assize"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 2
+    },
+    {
+      "id": "f13",
+      "text": {
+        "fr": "Quel événement a marqué la vie de Saint François à Gubbio ?",
+        "mg": "Inona ny zava-nitranga lehibe teo amin'ny fiainan'i Masindahy François tany Gubbio?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La rencontre avec un loup",
+            "mg": "Ny fihaonana tamin'ny amboadia"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "La fondation de l'Ordre",
+            "mg": "Ny fananganana ny Fikambanana"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "La première stigmate",
+            "mg": "Ny fery dimy"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 2
+    },
+    {
+      "id": "f14",
+      "text": {
+        "fr": "Qui a écrit la biographie officielle de Saint François ?",
+        "mg": "Iza no nanoratra ny tantara ofisialin'i Masindahy François?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Saint Bonaventure",
+            "mg": "Masindahy Bonaventura"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Saint Dominique",
+            "mg": "Masindahy Dominika"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Saint Thomas d'Aquin",
+            "mg": "Masindahy Tomasy avy any Aquino"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "vie_saint_francois",
+      "difficulty": 2
+    },
+    {
+      "id": "b1",
+      "text": {
+        "fr": "Qui a écrit le premier livre de la Bible ?",
+        "mg": "Iza no nanoratra ny boky voalohany ao amin'ny Baiboly?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Moïse",
+            "mg": "Mosesy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Abraham",
+            "mg": "Abrahama"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "David",
+            "mg": "Davida"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b2",
+      "text": {
+        "fr": "Combien y a-t-il d'évangiles dans le Nouveau Testament ?",
+        "mg": "Firy ny Filazantsara ao amin'ny Testamenta Vaovao?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "3",
+            "mg": "3"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "4",
+            "mg": "4"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "5",
+            "mg": "5"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b3",
+      "text": {
+        "fr": "Quel est le dernier livre de la Bible ?",
+        "mg": "Inona ny boky farany ao amin'ny Baiboly?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Apocalypse",
+            "mg": "Apokalypsy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Actes",
+            "mg": "Asan'ny Apostoly"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Jude",
+            "mg": "Joda"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b4",
+      "text": {
+        "fr": "Qui a construit l'arche selon la Bible ?",
+        "mg": "Iza no nanao ny sambofiara araka ny Baiboly?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Abraham",
+            "mg": "Abrahama"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Noé",
+            "mg": "Noa"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Moïse",
+            "mg": "Mosesy"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b5",
+      "text": {
+        "fr": "Combien de disciples Jésus avait-il ?",
+        "mg": "Firy ny mpianatra nananan'i Jesoa?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "10",
+            "mg": "10"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "12",
+            "mg": "12"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "14",
+            "mg": "14"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b6",
+      "text": {
+        "fr": "Qui a trahi Jésus ?",
+        "mg": "Iza no namadika an'i Jesoa?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Pierre",
+            "mg": "Petera"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Jean",
+            "mg": "Jaona"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Judas",
+            "mg": "Jodasy"
+          },
+          "isCorrect": true
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b7",
+      "text": {
+        "fr": "Quel était le premier miracle de Jésus ?",
+        "mg": "Inona no fahagagana voalohany nataon'i Jesoa?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La multiplication des pains",
+            "mg": "Ny fampitomboana ny mofo"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Changer l'eau en vin",
+            "mg": "Nanova rano ho divay"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "La guérison d'un lépreux",
+            "mg": "Ny fanasitranana boka"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b8",
+      "text": {
+        "fr": "Où Jésus est-il né ?",
+        "mg": "Taiza no nahaterahan'i Jesoa?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Nazareth",
+            "mg": "Nazareta"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Bethléem",
+            "mg": "Betlehema"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Jérusalem",
+            "mg": "Jerosalema"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b9",
+      "text": {
+        "fr": "Qui était le père de Salomon ?",
+        "mg": "Iza no rain'i Solomona?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Saül",
+            "mg": "Saoly"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "David",
+            "mg": "Davida"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Samuel",
+            "mg": "Samoela"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b10",
+      "text": {
+        "fr": "Combien de jours a duré le déluge ?",
+        "mg": "Firy andro no naharetan'ny safo-drano?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "30 jours",
+            "mg": "30 andro"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "40 jours",
+            "mg": "40 andro"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "50 jours",
+            "mg": "50 andro"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b11",
+      "text": {
+        "fr": "Quel roi a demandé la construction du Temple de Jérusalem ?",
+        "mg": "Iza no mpanjaka nanome baiko hanorenana ny Tempolin'i Jerosalema?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "David",
+            "mg": "Davida"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Salomon",
+            "mg": "Solomona"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Saül",
+            "mg": "Saoly"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b12",
+      "text": {
+        "fr": "Quel prophète a été avalé par un grand poisson ?",
+        "mg": "Iza no mpaminany nataon'ny hazandrano lehibe?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Élie",
+            "mg": "Elia"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Jonas",
+            "mg": "Jonasy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Moïse",
+            "mg": "Mosesy"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b13",
+      "text": {
+        "fr": "Qui a vu un buisson ardent ?",
+        "mg": "Iza no nahita ny roimemy nirehitra nefa tsy levona?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Moïse",
+            "mg": "Mosesy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Élie",
+            "mg": "Elia"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Abraham",
+            "mg": "Abrahama"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b14",
+      "text": {
+        "fr": "Quel disciple a marché sur l'eau avec Jésus ?",
+        "mg": "Iza no mpianatra nandia ny rano niaraka tamin'i Jesoa?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Jean",
+            "mg": "Jaona"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Pierre",
+            "mg": "Petera"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "André",
+            "mg": "Andrea"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b15",
+      "text": {
+        "fr": "Quel apôtre est connu pour avoir douté de la résurrection de Jésus ?",
+        "mg": "Iza no apostoly malaza amin'ny fisalasalana momba ny fitsanganan'i Jesoa tamin'ny maty?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Thomas",
+            "mg": "Tomasy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Philippe",
+            "mg": "Filipo"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Jacques",
+            "mg": "Jakoba"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "b16",
+      "text": {
+        "fr": "Quel roi a demandé la sagesse plutôt que la richesse ?",
+        "mg": "Iza no mpanjaka nangataka fahendrena fa tsy harena?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Salomon",
+            "mg": "Solomona"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "David",
+            "mg": "Davida"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Saül",
+            "mg": "Saoly"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 2
+    },
+    {
+      "id": "b17",
+      "text": {
+        "fr": "Combien de plaies ont frappé l'Égypte dans l'Exode ?",
+        "mg": "Firy ny loza nifandimby namely an'i Ejipta ao amin'ny Bokin'ny Eksodosy?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "7",
+            "mg": "7"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "10",
+            "mg": "10"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "12",
+            "mg": "12"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 2
+    },
+    {
+      "id": "b18",
+      "text": {
+        "fr": "Quel prophète a confronté les prophètes de Baal sur le mont Carmel ?",
+        "mg": "Iza no mpaminany nifanandrina tamin'ny mpaminanin'i Bala tao amin'ny tendrombohitra Karmela?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Élie",
+            "mg": "Elia"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Isaïe",
+            "mg": "Izaia"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Jérémie",
+            "mg": "Jeremia"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 2
+    },
+    {
+      "id": "b19",
+      "text": {
+        "fr": "Combien d'années les Hébreux ont-ils erré dans le désert ?",
+        "mg": "Firy taona no nivahinian'ny Hebreo tany an-tany efitra?"
       },
       "answers": [
         {
@@ -214,121 +1040,21 @@
         },
         {
           "text": {
-            "fr": "30 ans",
-            "mg": "30 taona"
-          },
-          "isCorrect": false
-        },
-        {
-          "text": {
-            "fr": "25 ans",
-            "mg": "25 taona"
-          },
-          "isCorrect": true
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "8",
-      "text": {
-        "fr": "Où Saint François d’Assise a-t-il reçu les stigmates ?",
-        "mg": "Aiza no nahazoan’i Masindahy François d’Assise ny stigmas ?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "À Assise",
-            "mg": "Ao Asizy"
-          },
-          "isCorrect": false
-        },
-        {
-          "text": {
-            "fr": "Au mont Alverne",
-            "mg": "Ao amin’ny tendrombohitra Alverne"
+            "fr": "40 ans",
+            "mg": "40 taona"
           },
           "isCorrect": true
         },
         {
           "text": {
-            "fr": "À Rome",
-            "mg": "Ao Roma"
+            "fr": "50 ans",
+            "mg": "50 taona"
           },
           "isCorrect": false
         }
       ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "9",
-      "text": {
-        "fr": "Quel animal est souvent représenté avec Saint François d’Assise dans l’art ?",
-        "mg": "Inona ny biby matetika aseho miaraka amin’i Masindahy François d’Assise amin’ny zavakanto?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "Le cheval",
-            "mg": "Ny soavaly"
-          },
-          "isCorrect": false
-        },
-        {
-          "text": {
-            "fr": "L'oiseau",
-            "mg": "Ny vorona"
-          },
-          "isCorrect": true
-        },
-        {
-          "text": {
-            "fr": "Le serpent",
-            "mg": "Ny bibilava"
-          },
-          "isCorrect": false
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
-    },
-    {
-      "id": "10",
-      "text": {
-        "fr": "Quelle fête célèbre la mémoire de Saint François d’Assise ?",
-        "mg": "Inona ny fety mankalaza ny fahatsiarovana an’i Md François avy any Asizy?"
-      },
-      "answers": [
-        {
-          "text": {
-            "fr": "La Toussaint",
-            "mg": "Ny Fetin’ny Olomasina"
-          },
-          "isCorrect": false
-        },
-        {
-          "text": {
-            "fr": "La fête de Saint François",
-            "mg": "Ny Fetin’i Masindahy François"
-          },
-          "isCorrect": true
-        },
-        {
-          "text": {
-            "fr": "Noël",
-            "mg": "Noely"
-          },
-          "isCorrect": false
-        }
-      ],
-      "category": "vie_saint_francois",
-      "difficulty": 1,
-      "imageUrl": "assets/images/saint_francis_birth.jpg"
+      "category": "bible",
+      "difficulty": 2
     }
   ]
 }

@@ -45,6 +45,13 @@ class QuizTimerState extends State<QuizTimer> {
     _startTimer();
   }
 
+  void stopTimer() {
+    _timer?.cancel(); // Arrête le timer
+    setState(() {
+      _seconds = _maxSeconds; // Réinitialise les secondes si nécessaire
+    });
+  }
+
   @override
   void dispose() {
     _timer?.cancel();

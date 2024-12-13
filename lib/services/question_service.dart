@@ -8,12 +8,21 @@ class QuestionService {
       final String jsonString =
           await rootBundle.loadString('assets/data/questions.json');
       final Map<String, dynamic> jsonData = json.decode(jsonString);
-      final List<dynamic> questionsJson = jsonData['questions'];
 
-      return questionsJson.map((json) => Question.fromJson(json)).toList();
+      if (jsonData['questions'] == null || jsonData['questions'].isEmpty) {
+        throw Exception('Aucune question trouvée dans le fichier JSON.');
+      }
+
+      return (jsonData['questions'] as List)
+          .map((json) => Question.fromJson(json))
+          .toList();
     } catch (e) {
-      print('Error loading questions: $e');
+      print('Erreur lors du chargement des questions : $e');
       return [];
     }
+  }
+
+  List<Question> filterQuestionsByLevel(List<Question> questions, int level) {
+    return questions.where((question) => question.difficulty == level).toList();
   }
 }

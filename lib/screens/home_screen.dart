@@ -4,8 +4,7 @@ import 'package:quiz_app/providers/language_provider.dart';
 import 'package:quiz_app/screens/quiz_screen.dart';
 import 'package:quiz_app/screens/scores_screen.dart';
 import 'package:quiz_app/services/translation_service.dart';
-import 'package:quiz_app/widgets/language_selector.dart';
-import 'package:quiz_app/widgets/theme_toggle.dart';
+import 'package:quiz_app/widgets/app_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,92 +17,50 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(TranslationService.translate('app_title', currentLanguage)),
-        actions: const [
-          ThemeToggle(),
-          LanguageSelector(),
-        ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              TranslationService.translate('select_category', currentLanguage),
-              style: Theme.of(context).textTheme.headlineSmall,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 24),
-            _buildCategoryCard(
-              context,
-              title: TranslationService.translate(
-                  'category_vie_saint_francois', currentLanguage),
-              category: 'vie_saint_francois',
-              color: const Color(0xFFFFE8E8),
-              icon: Icons.church,
-              iconColor: Colors.pink,
-            ),
-            const SizedBox(height: 16),
-            _buildCategoryCard(
-              context,
-              title: TranslationService.translate(
-                  'category_bible', currentLanguage),
-              category: 'bible',
-              color: const Color(0xFFE8F1FF),
-              icon: Icons.auto_stories,
-              iconColor: Colors.blue,
-            ),
-            const SizedBox(height: 16),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
+      drawer: const AppDrawer(),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Theme.of(context).primaryColor.withOpacity(0.1),
+              Colors.white,
+            ],
+          ),
+        ),
+        child: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const SizedBox(height: 24),
+                _buildCategoryCard(
                   context,
-                  MaterialPageRoute(builder: (context) => const ScoresScreen()),
-                );
-              },
-              child: Card(
-                elevation: 4,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  title: TranslationService.translate(
+                      'category_vie_saint_francois', currentLanguage),
+                  category: 'vie_saint_francois',
+                  icon: Icons.person,
+                  color: Colors.brown.shade50,
+                  iconColor: Colors.brown,
                 ),
-                color: const Color(0xFFE8FFE9),
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: const Icon(
-                          Icons.emoji_events,
-                          color: Colors.green,
-                          size: 32,
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Text(
-                          TranslationService.translate(
-                              'view_scores', currentLanguage),
-                          style:
-                              Theme.of(context).textTheme.titleLarge?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
-                      ),
-                      Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.grey[600],
-                      ),
-                    ],
-                  ),
+                const SizedBox(height: 16),
+                _buildCategoryCard(
+                  context,
+                  title: TranslationService.translate(
+                      'category_bible', currentLanguage),
+                  category: 'bible',
+                  icon: Icons.book,
+                  color: Colors.blue.shade50,
+                  iconColor: Colors.blue,
                 ),
-              ),
+                const SizedBox(height: 24),
+                _buildScoresCard(context, currentLanguage),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -113,15 +70,13 @@ class HomeScreen extends StatelessWidget {
     BuildContext context, {
     required String title,
     required String category,
-    required Color color,
     required IconData icon,
+    required Color color,
     required Color iconColor,
   }) {
     return Card(
       elevation: 4,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(16),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       color: color,
       child: InkWell(
         onTap: () {
@@ -143,11 +98,7 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: Icon(
-                  icon,
-                  color: iconColor,
-                  size: 32,
-                ),
+                child: Icon(icon, color: iconColor, size: 32),
               ),
               const SizedBox(width: 16),
               Expanded(
@@ -155,13 +106,55 @@ class HomeScreen extends StatelessWidget {
                   title,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
+                        color: Colors.black87,
                       ),
                 ),
               ),
-              Icon(
-                Icons.arrow_forward_ios,
-                color: Colors.grey[600],
+              Icon(Icons.arrow_forward_ios, color: Colors.grey[600]),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildScoresCard(BuildContext context, String currentLanguage) {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      color: Colors.green.shade50,
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ScoresScreen()),
+          );
+        },
+        borderRadius: BorderRadius.circular(16),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Icon(Icons.emoji_events,
+                    color: Colors.green, size: 32),
               ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Text(
+                  TranslationService.translate('view_scores', currentLanguage),
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                ),
+              ),
+              Icon(Icons.arrow_forward_ios, color: Colors.grey[600]),
             ],
           ),
         ),

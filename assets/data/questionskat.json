@@ -1,0 +1,317 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "text": {
+        "fr": "Quel est le sacrement qui initie un chrétien catholique dans la communauté de l'Église ?",
+        "mg": "Inona no sakramenta mampiditra ny kristianina katolika ao amin'ny fiangonana?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La Confirmation",
+            "mg": "Ny Fanamafisana"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Le Baptême",
+            "mg": "Ny Batemy"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "L'Eucharistie",
+            "mg": "Ny Eokaristia"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "2",
+      "text": {
+        "fr": "Quel est le livre sacré des chrétiens catholiques ?",
+        "mg": "Inona no boky masina ho an'ny kristianina katolika?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Le Coran",
+            "mg": "Ny Koran"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "La Bible",
+            "mg": "Ny Baiboly"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Le Talmud",
+            "mg": "Ny Talmud"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "3",
+      "text": {
+        "fr": "Qui est considéré comme le fondateur de l'Église catholique ?",
+        "mg": "Iza no heverina ho mpanorina ny Fiangonana katolika?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Saint Pierre",
+            "mg": "Saint Pierre"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Saint Paul",
+            "mg": "Saint Paoly"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Saint François d'Assise",
+            "mg": ""
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "4",
+      "text": {
+        "fr": "Quel est le nom de la prière centrale de la liturgie catholique ?",
+        "mg": "Inona no anaran'ny vavaka fototra ao amin'ny liturgi katolika?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "Le Notre Père",
+            "mg": "Ny Ray Be"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Le Je vous salue, Marie",
+            "mg": "Salama Maria"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Le Credo",
+            "mg": "Ny Kredo"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "5",
+      "text": {
+        "fr": "Quel est le symbole de la foi catholique ?",
+        "mg": "Inona no mariky ny finoana katolika?"
+      },
+      "answers": [
+        {
+          "text": {
+            "fr": "La croix",
+            "mg": "Hazofijaliana"
+          },
+          "isCorrect": true
+        },
+        {
+          "text": {
+            "fr": "Le poisson",
+            "mg": "Trondro"
+          },
+          "isCorrect": false
+        },
+        {
+          "text": {
+            "fr": "Le pain et le vin",
+            "mg": "Mofo sy ny divay"
+          },
+          "isCorrect": false
+        }
+      ],
+      "category": "bible",
+      "difficulty": 1
+    },
+    {
+      "id": "6",
+      "text": {
+        "fr": "Qui est le chef spirituel de l'Église catholique ?",
+        "mg": "Iza no mpitarika ara-panahy ao amin'ny Fiangonana katolika ?"
+      },
+      "answers": [
+        {
+          "text": { 
+              "fr":"Le pape", 
+              "mg":"Papa" 
+           }, 
+           "isCorrect": true 
+         }, 
+         { 
+           "text": { 
+               "fr":  "L'archevêque", 
+               "mg": "Arseveka" 
+           }, 
+           "isCorrect": false 
+         }, 
+         { 
+           "text": { 
+               "fr":  "Le cardinal", 
+               "mg": "Kardinaly "
+           }, 
+           "isCorrect": false 
+         } 
+       ],  
+       "category":  "bible",  
+       "difficulty":  1 
+     },  
+     {  
+       "id":  "7",  
+       "text": {  
+         "fr":  "L'Eucharistie commémore quel événement ?",  
+         "mg": "Inona no hetsika tsaroana amin'ny Eokaristia ?"  
+       },  
+       "answers": [  
+         {  
+           "text": {  
+             "fr":  "La création du monde",  
+             "mg": "Ny famoronana ny tontolo"  
+           },  
+           "isCorrect": false  
+         },  
+         {  
+           "text": {  
+             "fr":  "La résurrection de Jésus",  
+             "mg": "Ny fitsanganan'i Jesoa"  
+           },  
+           "isCorrect": false  
+         },  
+         {  
+           "text": {  
+             "fr":  "La dernière Cène",  
+             "mg": "Ny Sakafo Farany"  
+           },  
+           "isCorrect": true  
+         }  
+       ],  
+       "category":  "bible",  
+       "difficulty":  1   
+     },   
+     {   
+       "id":  "8",   
+       "text": {   
+         "fr":  "Les dix commandements sont des lois données par qui ?",   
+         "mg": "Iza no nanome ny didy folo?"
+       },   
+       "answers": [   
+         {   
+           "text": {   
+             "fr":  "Moïse",   
+             "mg": "Moizy"   
+           },   
+           "isCorrect": true   
+         },   
+         {   
+           "text": {   
+             "fr":  "Jésus-Christ",   
+             "mg": "Jeso Kristy"   
+           },   
+           "isCorrect": false   
+         },   
+         {   
+           "text": {   
+             "fr":  "Saint Paul",   
+             "mg": "Masindahy Paoly"   
+           },   
+           "isCorrect": false   
+         }    
+       ],    
+       "category":  "bible",    
+       "difficulty":  1    
+     },    
+     {    
+       "id" :  "9",    
+       "text" : {    
+        "fr" :  "Le carême est une période de préparation à quoi ?",    
+         "mg" : "Inona no fotoana fanomanana ny karazana?"    
+       },    
+       "answers" : [    
+         {    
+           "text" : {    
+             "fr" :  "Noël",    
+             "mg" : "Noely"    
+           },    
+           "isCorrect" : false    
+         },    
+         {    
+           "text" : {    
+             "fr" :  "Pâques",    
+             "mg" : "Paka"    
+           },    
+           "isCorrect" : true    
+         },    
+         {    
+           "text" : {    
+             "fr" :  "L'Ascension",    
+             "mg" : "Fiakarana"    
+           },    
+           "isCorrect" : false    
+         }     
+       ],     
+       "category" :  "bible",     
+       "difficulty" :  1     
+     },     
+     {     
+       "id" :  "10",     
+       "text ": {     
+         "fr" :  "La Vierge Marie est honorée dans quelle fête catholique ?",     
+         "mg" : "Iza no asongadina amin'ny fety katolika?"     
+       },     
+       "answers" : [     
+         {     
+           "text" : {     
+             "fr" :  "L'Assomption",     
+             "mg" : "Ny Fiakaran'i Maria."     
+           },     
+           "isCorrect ": true     
+         },     
+         {     
+           "text" : {     
+             "fr" :  "La Toussaint",     
+             "mg" : "Fetin'ny olomasina"     
+           },     
+           "isCorrect" : false     
+         }      
+       ],      
+       "category" :  "bible",      
+       "difficulty" :  1      
+     }      
+   ]      
+}

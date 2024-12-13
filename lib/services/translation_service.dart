@@ -1,10 +1,12 @@
+import 'package:quiz_app/providers/language_provider.dart';
+
 class TranslationService {
   static Map<String, Map<String, String>> translations = {
     'fr': {
       'app_title': 'Quiz Franciscain',
       'welcome': 'Bienvenue au Quiz Franciscain',
       'start_quiz': 'Commencer le Quiz',
-      'view_scores': 'Voir les scores',
+      'view_scores': 'Scores',
       'quiz': 'Quiz',
       'score': 'Score',
       'percentage': 'Pourcentage',
@@ -19,10 +21,26 @@ class TranslationService {
       'quiz_finished': 'Quiz terminé !',
       'final_score': 'Score final',
       'select_category': 'Choisissez une catégorie',
-      'category_vie_saint_francois': 'Vie de Saint François',
-      'category_bible': 'Bible',
+      'category_vie_saint_francois': 'Fransiscain',
+      'category_bible': 'Catholique',
       'choose_theme_color': 'Choisir la couleur du thème',
       'cancel': 'Annuler',
+      'change_language': 'Changer de langue',
+      'select_language': 'Sélectionner la langue',
+      'change_theme': 'Changer le thème',
+      'about': 'À propos',
+      'about_content':
+          'Application de quiz pour les membres des ordres franciscains séculiers.',
+      'close': 'Fermer',
+      'reminder_settings': 'Paramètres de rappel',
+      'reminder_description': 'Choisissez la fréquence des rappels',
+      'reminder_12h': 'Toutes les 12 heures',
+      'reminder_24h': 'Une fois par jour',
+      'reminder_48h': 'Tous les 2 jours',
+      'reminder_72h': 'Tous les 3 jours',
+      'save': 'Enregistrer',
+      'notifications': 'Notifications',
+      'feedback': 'Feedback'
     },
     'mg': {
       'app_title': 'Kilalao Fanontaniana Fransiskana',
@@ -35,7 +53,7 @@ class TranslationService {
       'back_home': 'Hiverina any am-piandohana',
       'restart': 'Averina indray',
       'score_history': 'Tantaran\'ny isa azo',
-      'no_scores': 'Tsy misy isa voarakitra',
+      'no_scores': 'Isa',
       'no_scores_category': 'Tsy misy isa ho an\'ity sokajy ity',
       'category': 'Sokajy',
       'date': 'Daty',
@@ -43,10 +61,26 @@ class TranslationService {
       'quiz_finished': 'Vita ny kilalao !',
       'final_score': 'Isa farany',
       'select_category': 'Misafidiana sokajy',
-      'category_vie_saint_francois': 'Fiainan\'i Masindahy François',
-      'category_bible': 'Baiboly',
+      'category_vie_saint_francois': 'Fransiskanina',
+      'category_bible': 'Katolika',
       'choose_theme_color': 'Misafidiana loko',
       'cancel': 'Aoka ihany',
+      'change_language': 'Hanova fiteny',
+      'select_language': 'Misafidiana fiteny',
+      'change_theme': 'Hanova endrika',
+      'about': 'Momba',
+      'about_content':
+          'Rindran-kira fanontaniana ho an\'ny mpikambana ao amin\'ny fikambanana fransiskana.',
+      'close': 'Hidiana',
+      'reminder_settings': 'Fampahafantarana',
+      'reminder_description': 'Safidio ny fotoana hampahafantarana anao',
+      'reminder_12h': 'Isaky ny 12 ora',
+      'reminder_24h': 'Indray isan\'andro',
+      'reminder_48h': 'Isaky ny 2 andro',
+      'reminder_72h': 'Isaky ny 3 andro',
+      'save': 'Tehirizo',
+      'notifications': 'Fampahafantarana',
+      'feedback': 'Fanehoan-kevitra'
     },
   };
 

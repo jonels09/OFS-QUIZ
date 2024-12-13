@@ -6,17 +6,115 @@ import 'package:quiz_app/providers/language_provider.dart';
 import 'package:quiz_app/services/score_service.dart';
 import 'package:quiz_app/services/translation_service.dart';
 
-class ScoresScreen extends StatelessWidget {
+class ScoresScreen extends StatefulWidget {
   const ScoresScreen({super.key});
+
+  @override
+  State<ScoresScreen> createState() => _ScoresScreenState();
+}
+
+class _ScoresScreenState extends State<ScoresScreen> {
+  final PageController _pageController = PageController(viewportFraction: 0.85);
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   List<Score> _getTopScores(List<Score> scores, String category) {
     final categoryScores =
         scores.where((score) => score.category == category).toList();
-
-    categoryScores.sort((a, b) =>
-        (b.score / b.totalQuestions).compareTo(a.score / a.totalQuestions));
-
+    categoryScores.sort((a, b) => b.score.compareTo(a.score));
     return categoryScores.take(10).toList();
+  }
+
+  Widget _buildScoreCard(Score score, BuildContext context, int rank) {
+    return Card(
+      elevation: 4,
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+      child: ListTile(
+        leading: CircleAvatar(
+          backgroundColor: Theme.of(context).primaryColor,
+          child: Text(
+            '${rank + 1}',
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        title: Text(
+          '${score.score} points',
+          style: Theme.of(context)
+              .textTheme
+              .titleLarge
+              ?.copyWith(fontWeight: FontWeight.bold),
+        ),
+        subtitle: Text(
+          DateFormat('dd/MM/yyyy HH:mm').format(score.date),
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCategoryPage(
+      String category, List<Score> scores, String currentLanguage) {
+    final categoryScores = _getTopScores(scores, category);
+
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          /*Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Theme.of(context).primaryColor.withOpacity(0.1),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(20)),
+            ),
+            child:*/
+          Text(
+            TranslationService.translate('category_$category', currentLanguage),
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Theme.of(context).primaryColor),
+            textAlign: TextAlign.center,
+          ),
+          //),
+          Expanded(
+            child: categoryScores.isEmpty
+                ? Center(
+                    child: Text(
+                    TranslationService.translate(
+                        'no_scores_category', currentLanguage),
+                    style: Theme.of(context).textTheme.titleMedium,
+                    textAlign: TextAlign.center,
+                  ))
+                : ListView.builder(
+                    itemCount: categoryScores.length,
+                    itemBuilder: (context, index) {
+                      return _buildScoreCard(
+                          categoryScores[index], context, index);
+                    },
+                  ),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
@@ -40,79 +138,17 @@ class ScoresScreen extends StatelessWidget {
 
           if (!snapshot.hasData || snapshot.data!.isEmpty) {
             return Center(
-              child: Text(
-                  TranslationService.translate('no_scores', currentLanguage)),
-            );
+                child: Text(TranslationService.translate(
+                    'no_scores', currentLanguage)));
           }
 
           return PageView.builder(
+            controller: _pageController,
             itemCount: categories.length,
             itemBuilder: (context, categoryIndex) {
               final category = categories[categoryIndex];
-              final categoryScores = _getTopScores(snapshot.data!, category);
-
-              return Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      TranslationService.translate(
-                          'category_$category', currentLanguage),
-                      style:
-                          Theme.of(context).textTheme.headlineSmall?.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
-                    ),
-                  ),
-                  if (categoryScores.isEmpty)
-                    Expanded(
-                      child: Center(
-                        child: Text(
-                          TranslationService.translate(
-                              'no_scores_category', currentLanguage),
-                          style: Theme.of(context).textTheme.titleMedium,
-                        ),
-                      ),
-                    )
-                  else
-                    Expanded(
-                      child: ListView.builder(
-                        padding: const EdgeInsets.all(8),
-                        itemCount: categoryScores.length,
-                        itemBuilder: (context, index) {
-                          final score = categoryScores[index];
-                          return Card(
-                            elevation: 4,
-                            margin: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 8,
-                            ),
-                            child: ListTile(
-                              leading: CircleAvatar(
-                                backgroundColor: Theme.of(context).primaryColor,
-                                child: Text(
-                                  '${index + 1}',
-                                  style: const TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                              title: Text(
-                                '${score.score}/${score.totalQuestions} (${(score.score / score.totalQuestions * 100).round()}%)',
-                                style: Theme.of(context).textTheme.titleLarge,
-                              ),
-                              subtitle: Text(
-                                DateFormat('dd/MM/yyyy HH:mm')
-                                    .format(score.date),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                ],
-              );
+              return _buildCategoryPage(
+                  category, snapshot.data!, currentLanguage);
             },
           );
         },
